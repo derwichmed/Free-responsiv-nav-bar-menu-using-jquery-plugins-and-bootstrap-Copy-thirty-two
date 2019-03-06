@@ -1,0 +1,135 @@
+body > header{
+    padding: 25px
+}
+body > header > div{
+    height: 50px;
+    background-color: #333333;
+    border-bottom: #fe9900 5px solid
+}
+body > header .nav_bar .nav_bar_item{
+    display: inline-block;
+    color: #777777;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Raleway";
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 15px
+}
+body > header .nav_bar .nav_bar_item > div{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    position: relative
+}
+body > header .nav_bar .nav_bar_item > div:hover{
+    background-color: #fe9900;
+    color: white;
+}
+body > header .search_box{
+    width: 300px;
+    padding-top: 8px;
+    padding-right: 15px
+}
+body > header .search_box .input-group{
+    background-color: transparent;
+    border: #777777 1px solid;
+    height: 30px;
+}
+body > header .search_box .input-group .input-group-text,
+body > header .search_box .input-group .form-control{
+    background-color: transparent;
+    border: none;
+    height: 100%
+}
+body > header .nav_bar .nav_bar_item .sub_menu{
+    width: 200px;
+    background-color: #fe9900;
+    border: #e68b00 1px solid;
+    text-align: left;
+    color: white;
+    display: none
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item > div{
+    position: relative;
+    padding: 15px;
+    border-bottom: #e68b00 1px solid
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item > div:hover{
+    background-color: #fea21b;
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item .drop_down_img{
+    float: right;
+    width: 13px;
+    height: 13px;
+    margin-top: 5px
+}
+#mobile_navs{
+    display: none;
+}
+#mobile_navs{
+    color: #777777;
+    cursor: pointer;
+    font-family: "Raleway";
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 20px;
+    padding-top: 7px
+}
+#mobile_navs > div{
+    width: 100%;
+    margin: 0px
+}
+#mobile_navs .menu_icon img{
+    width: 30px;
+    height: 30px;
+}
+@media(min-width: 900px){
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        position: absolute;
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu_zero{
+        top: 50px;
+        left: 0;
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu_right{
+        top: 0;
+        left: 100%;
+    }
+    body > header .nav_bar .nav_bar_item > div{
+        height: 50px;
+    }
+}
+@media(max-width: 900px){
+    #mobile_navs{
+        display: block
+    }
+    #pc_navs{
+        position: absolute;
+        left: 15px;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        background-color: #333333;
+        display: none
+    }
+    body > header .nav_bar{
+        display: block;
+        width: 100%
+    }
+    body > header .nav_bar .nav_bar_item{
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: #777777 1px solid
+    }
+    body > header .nav_bar .search_box .input-group{
+        padding-left: 25px
+    }
+    body > header .nav_bar .nav_bar_item > div{
+        min-height: 50px
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        width: 100%
+    }
+}
